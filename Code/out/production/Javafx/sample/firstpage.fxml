@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.firstpage">
+   <children>
+      <ImageView fitHeight="664.0" fitWidth="1428.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/original.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="554.0" layoutY="452.0" onAction="#fun" prefHeight="62.0" prefWidth="162.0" ripplerFill="BLACK" style="-fx-background-color: WHITE;" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="806.0" layoutY="452.0" onAction="#userp" prefHeight="62.0" prefWidth="162.0" ripplerFill="BLACK" style="-fx-background-color: WHITE;" text="User Login">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

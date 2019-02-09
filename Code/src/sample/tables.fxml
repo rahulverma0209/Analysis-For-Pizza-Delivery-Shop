@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1410.0" rotateGraphic="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Tables">
+
+   <tabs>
+      <Tab text="Analysing">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #333;">
+               <children>
+                  <Label layoutX="610.0" layoutY="17.0" prefHeight="70.0" prefWidth="190.0" text="Analysis" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <SplitPane cacheShape="false" centerShape="false" focusTraversable="false" layoutY="103.0" prefHeight="511.0" prefWidth="1410.0" scaleShape="false">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TextArea fx:id="analys_output" editable="false" layoutX="366.0" layoutY="37.0" prefHeight="436.0" prefWidth="1004.0" wrapText="true">
+                                 <font>
+                                    <Font name="Lucida Console" size="19.0" />
+                                 </font>
+                              </TextArea>
+                              <JFXButton layoutX="20.0" layoutY="39.0" onAction="#b1" prefHeight="31.0" prefWidth="326.0" text="No. of Pizzas sold" />
+                              <JFXButton layoutX="20.0" layoutY="70.0" onAction="#b2" prefHeight="31.0" prefWidth="326.0" text="No of Pizza Ordered at diffrent place" />
+                              <JFXButton layoutX="20.0" layoutY="101.0" onAction="#b3" prefHeight="31.0" prefWidth="326.0" text="No of pizza ordered by customer" />
+                              <JFXButton layoutX="20.0" layoutY="132.0" onAction="#b4" prefHeight="31.0" prefWidth="326.0" text="Request comming from new place" />
+                              <JFXButton layoutX="20.0" layoutY="163.0" onAction="#b5" prefHeight="31.0" prefWidth="326.0" text="Staff with less than avg rating" />
+                              <JFXButton layoutX="20.0" layoutY="194.0" onAction="#b6" prefHeight="31.0" prefWidth="326.0" text="No of Pizza Sold Yearly" />
+                              <JFXButton layoutX="20.0" layoutY="225.0" onAction="#b7" prefHeight="31.0" prefWidth="326.0" text="No of Pizza Sold in Current Year" />
+                              <JFXButton layoutX="20.0" layoutY="256.0" onAction="#b1" prefHeight="31.0" prefWidth="326.0" text="B8" />
+                              <JFXButton layoutX="20.0" layoutY="287.0" onAction="#b1" prefHeight="31.0" prefWidth="326.0" text="B9" />
+                              <JFXButton layoutX="20.0" layoutY="318.0" onAction="#b1" prefHeight="31.0" prefWidth="326.0" text="B10" />
+                              <JFXButton layoutX="20.0" layoutY="349.0" onAction="#b1" prefHeight="31.0" prefWidth="326.0" text="B11" />
+                              <JFXButton layoutX="20.0" layoutY="380.0" onAction="#b1" prefHeight="31.0" prefWidth="326.0" text="B12" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Charts">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #333;">
+               <children>
+                  <JFXTabPane layoutX="-4.0" prefHeight="621.0" prefWidth="1418.0" side="LEFT">
+                     <tabs>
+                        <Tab text="LineChart">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+                                 <children>
+                                    <LineChart fx:id="lc1" layoutX="80.0" layoutY="94.0" legendVisible="false" prefHeight="451.0" prefWidth="565.0" title="No of Pizza Sold in current year">
+                                      <xAxis>
+                                        <CategoryAxis label="Months" side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis label="No of Unit Sold" side="LEFT" />
+                                      </yAxis>
+                                    </LineChart>
+                                    <JFXButton layoutX="528.0" layoutY="545.0" onAction="#linechart1" prefHeight="31.0" prefWidth="326.0" text="No. of Pizzas sold in current yeat">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <TextArea fx:id="analys_output1" editable="false" layoutX="780.0" layoutY="131.0" prefHeight="370.0" prefWidth="476.0" wrapText="true">
+                                       <font>
+                                          <Font name="Lucida Console" size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="BarChart">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+                                 <children>
+                                    <BarChart fx:id="barc1" layoutX="63.0" layoutY="65.0" legendVisible="false" prefHeight="451.0" prefWidth="565.0" title="No of Pizza Sold">
+                                      <xAxis>
+                                        <CategoryAxis label="Pizza Name" side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis label="No of Unit Sold" side="LEFT" />
+                                      </yAxis>
+                                    </BarChart>
+                                    <TextArea fx:id="analys_output3" editable="false" layoutX="701.0" layoutY="118.0" prefHeight="370.0" prefWidth="476.0" wrapText="true">
+                                       <font>
+                                          <Font name="Lucida Console" size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <JFXButton layoutX="477.0" layoutY="543.0" onAction="#barchart1" prefHeight="31.0" prefWidth="326.0" text="No. of Pizzas sold">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="PieChart">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+                                 <children>
+                                    <PieChart fx:id="pchart1" layoutX="110.0" layoutY="111.0" title="Request From new place" />
+                                    <JFXButton layoutX="528.0" layoutY="548.0" onAction="#piechart1" prefHeight="31.0" prefWidth="326.0" text="Request comming from new place">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></JFXButton>
+                                    <TextArea fx:id="analys_output2" editable="false" layoutX="780.0" layoutY="131.0" prefHeight="370.0" prefWidth="476.0" wrapText="true">
+                                       <font>
+                                          <Font name="Lucida Console" size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Query Preformance">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #333;">
+               <children>
+                  <Label layoutX="158.0" layoutY="36.0" prefHeight="41.0" prefWidth="135.0" text="Query : " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="query" layoutX="315.0" layoutY="19.0" prefHeight="75.0" prefWidth="803.0" wrapText="true">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="exe_button" layoutX="1156.0" layoutY="36.0" mnemonicParsing="false" onAction="#execite_fun" prefHeight="41.0" prefWidth="97.0" text="Execute">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="query_output" editable="false" layoutX="50.0" layoutY="140.0" prefHeight="435.0" prefWidth="1302.0">
+                     <font>
+                        <Font name="Lucida Console" size="18.0" />
+                     </font></TextArea>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

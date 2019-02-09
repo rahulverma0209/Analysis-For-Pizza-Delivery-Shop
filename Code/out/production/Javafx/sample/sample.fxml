@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<children>
+   <ImageView fitHeight="669.0" fitWidth="1428.0" pickOnBounds="true">
+      <image>
+         <Image url="@img/loginn.jpg" />
+      </image>
+   </ImageView>
+   <JFXTextField fx:id="user" labelFloat="true" layoutX="113.0" layoutY="212.0" prefHeight="52.0" prefWidth="241.0" promptText="Username">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></JFXTextField>
+   <JFXPasswordField fx:id="pass" labelFloat="true" layoutX="113.0" layoutY="309.0" prefHeight="52.0" prefWidth="241.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></JFXPasswordField>
+      <Label fx:id="texx" layoutX="113.0" layoutY="488.0" prefHeight="61.0" prefWidth="324.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="113.0" layoutY="409.0" onAction="#login1" prefHeight="42.0" prefWidth="121.0" ripplerFill="WHITE" style="-fx-background-color: #333;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+</children>
+</AnchorPane>
