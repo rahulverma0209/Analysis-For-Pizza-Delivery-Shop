@@ -8,8 +8,8 @@ It's a desktop application project which is designed to keep track of Pizza Deli
 
 ![AnalysisBarGraph](/ScreenShots/AnalysisBarGraph.png)
 
-
-#### Request coming from new place
+##
+#### Request coming from new places
 
 ![AnalysisPieChart](/ScreenShots/AnalysisPieChart.png)
 
